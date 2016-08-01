@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="MP4Parser">
+      <UniqueIdentifier>{32ffa3ab-d9ee-4d9c-8b31-c0fd1b7fbc53}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HttpDownloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.Atom.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.BinaryStream.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.BXML.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.CO64.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.ContainerAtom.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.CPRT.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.CTTS.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.DataAtom.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.DREF.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.ELST.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.File.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.FREE.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.FRMA.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.FTYP.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.FullBox.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.HDLR.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.HMHD.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.IINF.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.ILOC.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.IMIF.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.IPMC.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.MDAT.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.MDHD.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.MEHD.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.MFHD.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.MFRO.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.MVHD.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.PADB.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.Parser.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.PDIN.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.PITM.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.SBGP.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.SCHI.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.SCHM.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.SDTP.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.SGPD.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.SMHD.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.STCO.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.STDP.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.STSC.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.STSD.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.STSH.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.STSS.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.STSZ.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.STTS.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.STZ2.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.SUBS.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.TFHD.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.TFRA.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.TKHD.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.TREF.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.TREX.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.TRUN.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.UDTA.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.UnknownAtom.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.VMHD.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="MP4Parser\MP4.XML.cpp">
+      <Filter>MP4Parser</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HttpDownloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Base64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

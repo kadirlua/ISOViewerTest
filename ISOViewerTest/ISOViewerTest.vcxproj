@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DDCDAAFB-B815-44DC-A62C-8A077B6A61B9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ISOViewerTest</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>include;MP4Parser\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>lib;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>include;MP4Parser\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>include;MP4Parser\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>lib;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>include;MP4Parser\include;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>lib;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64);$(NETFXKitsDir)Lib\um\x64</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>CURL_STATICLIB;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>CURL_STATICLIB;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>CURL_STATICLIB;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>CURL_STATICLIB;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="HttpDownloader.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MP4Parser\MP4.Atom.cpp" />
+    <ClCompile Include="MP4Parser\MP4.BinaryStream.cpp" />
+    <ClCompile Include="MP4Parser\MP4.BXML.cpp" />
+    <ClCompile Include="MP4Parser\MP4.CO64.cpp" />
+    <ClCompile Include="MP4Parser\MP4.ContainerAtom.cpp" />
+    <ClCompile Include="MP4Parser\MP4.CPRT.cpp" />
+    <ClCompile Include="MP4Parser\MP4.CTTS.cpp" />
+    <ClCompile Include="MP4Parser\MP4.DataAtom.cpp" />
+    <ClCompile Include="MP4Parser\MP4.DREF.cpp" />
+    <ClCompile Include="MP4Parser\MP4.ELST.cpp" />
+    <ClCompile Include="MP4Parser\MP4.File.cpp" />
+    <ClCompile Include="MP4Parser\MP4.FREE.cpp" />
+    <ClCompile Include="MP4Parser\MP4.FRMA.cpp" />
+    <ClCompile Include="MP4Parser\MP4.FTYP.cpp" />
+    <ClCompile Include="MP4Parser\MP4.FullBox.cpp" />
+    <ClCompile Include="MP4Parser\MP4.HDLR.cpp" />
+    <ClCompile Include="MP4Parser\MP4.HMHD.cpp" />
+    <ClCompile Include="MP4Parser\MP4.IINF.cpp" />
+    <ClCompile Include="MP4Parser\MP4.ILOC.cpp" />
+    <ClCompile Include="MP4Parser\MP4.IMIF.cpp" />
+    <ClCompile Include="MP4Parser\MP4.IPMC.cpp" />
+    <ClCompile Include="MP4Parser\MP4.MDAT.cpp" />
+    <ClCompile Include="MP4Parser\MP4.MDHD.cpp" />
+    <ClCompile Include="MP4Parser\MP4.MEHD.cpp" />
+    <ClCompile Include="MP4Parser\MP4.MFHD.cpp" />
+    <ClCompile Include="MP4Parser\MP4.MFRO.cpp" />
+    <ClCompile Include="MP4Parser\MP4.MVHD.cpp" />
+    <ClCompile Include="MP4Parser\MP4.PADB.cpp" />
+    <ClCompile Include="MP4Parser\MP4.Parser.cpp" />
+    <ClCompile Include="MP4Parser\MP4.PDIN.cpp" />
+    <ClCompile Include="MP4Parser\MP4.PITM.cpp" />
+    <ClCompile Include="MP4Parser\MP4.SBGP.cpp" />
+    <ClCompile Include="MP4Parser\MP4.SCHI.cpp" />
+    <ClCompile Include="MP4Parser\MP4.SCHM.cpp" />
+    <ClCompile Include="MP4Parser\MP4.SDTP.cpp" />
+    <ClCompile Include="MP4Parser\MP4.SGPD.cpp" />
+    <ClCompile Include="MP4Parser\MP4.SMHD.cpp" />
+    <ClCompile Include="MP4Parser\MP4.STCO.cpp" />
+    <ClCompile Include="MP4Parser\MP4.STDP.cpp" />
+    <ClCompile Include="MP4Parser\MP4.STSC.cpp" />
+    <ClCompile Include="MP4Parser\MP4.STSD.cpp" />
+    <ClCompile Include="MP4Parser\MP4.STSH.cpp" />
+    <ClCompile Include="MP4Parser\MP4.STSS.cpp" />
+    <ClCompile Include="MP4Parser\MP4.STSZ.cpp" />
+    <ClCompile Include="MP4Parser\MP4.STTS.cpp" />
+    <ClCompile Include="MP4Parser\MP4.STZ2.cpp" />
+    <ClCompile Include="MP4Parser\MP4.SUBS.cpp" />
+    <ClCompile Include="MP4Parser\MP4.TFHD.cpp" />
+    <ClCompile Include="MP4Parser\MP4.TFRA.cpp" />
+    <ClCompile Include="MP4Parser\MP4.TKHD.cpp" />
+    <ClCompile Include="MP4Parser\MP4.TREF.cpp" />
+    <ClCompile Include="MP4Parser\MP4.TREX.cpp" />
+    <ClCompile Include="MP4Parser\MP4.TRUN.cpp" />
+    <ClCompile Include="MP4Parser\MP4.UDTA.cpp" />
+    <ClCompile Include="MP4Parser\MP4.UnknownAtom.cpp" />
+    <ClCompile Include="MP4Parser\MP4.VMHD.cpp" />
+    <ClCompile Include="MP4Parser\MP4.XML.cpp" />
+    <ClCompile Include="tinyxml2.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Base64.h" />
+    <ClInclude Include="HttpDownloader.h" />
+    <ClInclude Include="tinyxml2.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
